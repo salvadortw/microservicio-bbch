@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: microservicio-bbch
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: BCCH_USER
+        sync: false
+      - key: BCCH_PASSWORD
+        sync: false
